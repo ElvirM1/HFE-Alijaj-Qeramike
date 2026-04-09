@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏗️ HFE-ALIJAJ — Website Zyrtar
 
-## Getting Started
+Ky është website profesional i kompanisë **HFE-ALIJAJ**, e specializuar në shtrim pllakash, instalim ujësjellës dhe ngrohje qendrore në Pejë, Kosovë. Projekti është ndërtuar me **Next.js 16 App Router**, me animacione Framer Motion, dizajn të plotë responsive — optimizuar për mobile.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🛠️ Karakteristikat
+
+- Faqe kryesore me hero animuar, seksion shërbimesh, portofol dhe kontakt
+- 3 faqe shërbimesh të dedikuara: Keramikë, Ujësjellës, Ngrohje Qendrore
+- Galeri projektesh me filtrim sipas kategorisë dhe lightbox
+- Faqe kontakti me formular të integruar (API server-side me validim)
+- Navbar me scroll-to-top dhe navigim universal (desktop + mobile)
+- Animacione scroll-triggered me Framer Motion në të gjitha seksionet
+- WhatsApp buton me bounce periodik për kontaktim të shpejtë
+- Dizajn plotësisht responsive — i optimizuar për iPhone dhe ekrane të vogla
+- Favicon dhe ikonë tab të personalizuar me logon e kompanisë
+- SEO metadata e konfiguruar për çdo faqe
+
+---
+
+## 🧩 Teknologjitë e Përdorura
+
+- **Next.js 16.2.2** — App Router, Server Components, API Routes
+- **React 19.2.4** — UI library
+- **TypeScript** — tip i fortë në të gjithë projektin
+- **Tailwind CSS v4** — stilizim me `@theme` tokens në `globals.css`
+- **Framer Motion 12** — animacione scroll-triggered dhe entrance
+- **Lucide React** — ikonat
+- **React Hook Form** — menaxhim i gjendjes së formularit
+
+---
+
+## 📁 Struktura e Projektit
+
+```
+app/
+  layout.tsx              # Layout global: Navbar + Footer + WhatsApp + ScrollToTop
+  page.tsx                # Faqja kryesore: Hero → Shërbime → Portofol → Kontakt
+  api/contact/route.ts    # API endpoint POST — validim server-side
+  services/               # Faqet e shërbimeve
+    keramika/
+    ujsjelles/
+    nxemje-qendrore/
+  contact/                # Faqja e dedikuar e kontaktit
+  projects/               # Galeria e projekteve
+components/               # Komponentët e përbashkëta (Navbar, Footer, Hero, etj.)
+hooks/
+  useAnimatedCounter.ts   # Animacion numeric në scroll
+public/
+  foto/                   # Fotografi projektesh
+  keramika120-280/        # Fotografi pllaka speciale
+  video/                  # Video projektesh
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Fillimi i Projektit
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+git clone https://github.com/ElvirM1/HFE-Alijaj-Qeramike.git
 
-## Learn More
+cd HFE-Alijaj-Qeramike
 
-To learn more about Next.js, take a look at the following resources:
+git checkout develop
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+npm install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+npm run dev
+```
 
-## Deploy on Vercel
+Hap [http://localhost:3000](http://localhost:3000) në shfletues.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🏗️ Build për Prodhim
+
+```bash
+npm run build
+
+npm start
+```
+
+---
+
+## 🌿 Struktura e Degëve (Branches)
+
+| Dega      | Qëllimi                                                     |
+| --------- | ----------------------------------------------------------- |
+| `main`    | Dega e prodhimit — e pastër, merr kod vetëm me Pull Request |
+| `develop` | Dega e zhvillimit — i gjithë kodi burimor është këtu        |
+
+---
+
+## 📞 Kontakt Biznesi
+
+- 📍 Pejë, Kosovë
+- 📱 049 617-818
+- 💬 [WhatsApp](https://wa.me/38349617818)
+- 🌐 Est. 2014
